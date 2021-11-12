@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <h3 style="font-size:40px; color:red" align="center">CUSTOMER AND BOOKING DETAILS</h3>
+ <style>
+  body{
+          background-image:url(dbus.jpeg);
+          background-position: center;
+          height: 200;
+          background-size: cover;
+        }
+  button
+  {
+     font-size: 40px;
+     padding:10px;
+     border-radius:10px;
+     margin:20px;
+  }
+  #container
+  {
+       text-align: center;
+  }        
+ </style>
+ </head>
+ <body>
+ <table border="0" align="center">
+      <tr><th style="font-size:40px; color:blue";><i>Customer Name:</i></th><td><input type="text"name="Customer Name" required></td></th>
+      <tr><th style="font-size:40px; color:blue";><i>Gender:</i></th><td><input type="radio" name="gender" value="M"> Male</td><td><input type="radio" name="gender" value="F" required> Female </td></tr> 
+      <tr><th style="font-size:40px; color:blue";><i>Phone No:</i></th><td><input type="text"name="Phone No" required></td></tr>
+      <tr><th style="font-size:40px; color:blue";><i>Booking Total:</i></th><td><input type="text"name="rupees" required></td></tr>
+      <tr><th style="font-size:40px; color:blue";><i>Online Deposit Payment:</i></th><td><input type="text" name="online deposit payment" required></td></tr>
+      </table>
+      <div id="container">
+           <button id="btnSUBMIT"><a href="./success.html">SUBMIT</a></button>     
+     </div>
+      <a href="https://www.redbus.in/Cancellation">
+      <h2 style="font-size:20px; color:green"; align="center"><i>NOTE:Ticket Cancellation Before 3 Hours of Departure Of Bus Time.</i></h2>
+  </body>
+  </html>
