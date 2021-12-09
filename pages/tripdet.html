@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <h1 style="font-size:40px; color:red" align="center" ;>BUS TICKET BOOKING</h1>
+     <link rel="stylesheet" href="../assets/css/login.css">
+
+
+</head>
+
+<body>
+     <img src="../assets/images/redbus.jpg" width="600" height="400" align="center"> </img>
+     <img src="../assets/images/seat.jpeg" width="600" height="400" align="center"></img>
+     <img src="../assets/images/download1.jpeg" width="600" height="400" align="center"></img>
+     
+     <form onsubmit="submit_function()">         
+               <h3 style="font-size:60px; color:wheat" align="center" ;>Trip Details</h3>
+          <table align="center">
+               <tr>
+                    <th style="font-size:40px; color:white" ;><i>Date:</i></th>
+                    <td><input type="date" name="Date" min="2021-10-14" max="2021-12-31" required></td>
+               </tr>
+               <tr> 
+                    <th style="font-size:40px; color:white" ;><i>Departure From:</i></th>
+                    <td><input type="text" name="Departure From" required></td>
+               </tr>
+               <tr>
+                    <th style="font-size:40px; color:white" ;><i>Arrive To:</i></th>
+                    <td><input type="text" name="Arrive To" required></td>
+               </tr>
+               <tr>
+                    <th style="font-size:40px; color:white" ;><i>No. of Seats:</i></th>
+                    <td><input type="Number" name="No. of Seats" required></td>
+               </tr>
+               <tr>
+                    <th style="font-size:40px; color:white" ;><i>Seat Type:</i></th>
+                    <td ><input type="radio" name="Seat" value="S">Sleeper</td>
+                    <td><input type="radio" name="Seat" value="N">Seater</td>
+                    <td><input type="radio" name="seat" value="AC"> AC </td>
+                    <td><input type="radio" name="seat" value="Non-Ac" required> Non-Ac </td>
+               </tr>
+          </table>
+     </form>
+     <div id="container">
+          <button id="btnNEXT"><a href="./list.html">NEXT</a></button>
+     </div>
+
+
+
+
+</body>
+
+</html>

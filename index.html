@@ -2,39 +2,54 @@
 <html>
 
 <head>
-  <title align = "center">login</title>
-  <link rel="stylesheet" href="../busticketbookingapp-ui/assets/css/index.css">
+
+  <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-    
-    
-        <h1 textalign="center">LOG IN</h1>
-        <button onclick="window.location.href='./pages/t and c.html';">
-        Terms and Conditions
-        </button>
-        <button onclick="window.location.href='./pages/blog.html';">
-        Blog
-        </button>
-        <br>
-        <br>
-        <center>
-        <div class="login">
-        <img src="./assets/images/manage.jpeg" width="33%" height="400"> 
-        <img src="./assets/images/track.jpeg" width="33%" height="400">
-        <img src="./assets/images/easy.jpeg" width="33%" height="400"> 
-        <br>
-        <br>
-          <table textalign="center">
-              <tr><th>User name :</th><td><input type="text" placeholder="Enter user name" required></td></tr>
-              <tr><th>Password :</th><td><input type="password" placeholder="Enter your password" required></td></tr>
-          </table>
-     <button id="btnLOGIN"><a href="./pages/login.html">LOGIN</a></button>
-    
-        
+  <h1 align="center">EasyWay</h1>
+
+  <button onclick="window.location.href='./pages/t and c.html';">
+    Terms and Conditions
+  </button>
+  <button onclick="window.location.href='./pages/blog.html';">
+    Blog
+  </button>
+  <center>
+    <div class="login">
+      <img src="./assets/images/manage.jpeg" width="33%" height="400">
+      <img src="./assets/images/track.jpeg" width="33%" height="400">
+      <img src="./assets/images/easy.jpeg" width="33%" height="400">
+
+      <form onsubmit="submit_function()">
+      <table textalign="center">
+
+        <tr>
+          <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white">User name :</th>
+          <td><input type="text" placeholder="Enter user name" id="username" required></td>
+        </tr>
+        <tr>
+          <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white">Email-Id :</th>
+          <td><input type="Email-id" id="Email_Id" placeholder="Enter Mail-id" required></td>
+        </tr>
+        <tr>
+          <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white">Create Password :</th>
+          <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001" minlength="8" required></td>
+        </tr>
+        <tr>
+          <th style="font-family:Arial, Helvetica, sans-serif; font-size: x-large; color:white">Confirm Password :</th>
+          <td><input type="password" id="confirm_pass" placeholder="Enter your password" required></td>
+        </tr>
+      </table>
+      <input type="submit" id="btnLOGIN">
+      </form>
+      
+      
+
+
     </div>
-    </center>
+  </center>
+  <script src="./assets/javascript/index.js"></script>
 </body>
+
 </html>
-
-
-

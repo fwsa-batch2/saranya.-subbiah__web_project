@@ -5,7 +5,12 @@
         background-attachment: fixed;
         background-size: 100% 100%;
     }
- 
+ button{
+     width: 200px;
+     background-color:wheat;
+     padding: 10px 10px;
+     border:transparent;
+ }
 
 input {
     width:200px;
@@ -15,14 +20,13 @@ input {
 }
 button {
     color:green;
-    background-color: "wheat";
-    padding : 10px 10px;
+    background-color:wheat;
+    padding: 10px 10px;
     width:200px;
     border:none;
 }
-.login{
-    
-    display:inline-block;
-    text-decoration: none;
-    margin-top: 200px;
+.login {
+    padding: 10px 10px;
+    text-decoration: powderblue;
+    border-radius: 10px;
 }

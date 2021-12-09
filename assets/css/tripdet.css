@@ -1,6 +1,6 @@
 
        body{
-          background-image:url(some.jpeg);
+          background-image:url("../images/some.jpeg");
           background-position: center;
           height: 100;
           background-size: cover;
@@ -16,3 +16,6 @@
   {
        text-align: center;
   }      
+  /* .menu{
+   
+  } */
