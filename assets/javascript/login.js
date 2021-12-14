@@ -1,6 +1,6 @@
 let customername = [];
 function PageOnLoad() {
-    const user = JSON.parse(localStorage.getItem("login"));
+    const user = JSON.parse(localStorage.getItem("submit"));
     if (user != null) {
         customername = user;
     }
@@ -9,13 +9,11 @@ function PageOnLoad() {
 
 function submit_function() {
     event.preventDefault();
-    const username = document.getElementById("username").value;
     const mailid = document.getElementById("Email_Id").value;
     const pass = document.getElementById("enter_pass").value;
     const conpass = document.getElementById("confirm_pass").value;
 
     let customerdetails = {
-        "username": username,
         "mail_id": mailid,
         "enter_pass": pass,
         "confirm_pass": conpass
@@ -37,8 +35,8 @@ function submit_function() {
     if (checkpassword) {
         customername.push(customerdetails);
         let check = JSON.stringify(customername)
-        localStorage.setItem("login", check);
-        window.location.href = "/pages/login.html"
+        localStorage.setItem("submit", check);
+        window.location.href = "/pages/tripdet.html"
     }
     else {
         alert("please check your password");
@@ -49,7 +47,7 @@ function submit_function() {
 
 
 function validmail(current_email) {
-    let user = JSON.parse(localStorage.getItem("login"));
+    let user = JSON.parse(localStorage.getItem("submit"));
     let used = false;
 
     if (user) {
