@@ -13,6 +13,8 @@ body {
     height:10%;
     width:20%;
     margin-top: 4%;
+    font-size:30px;
+    color:deepskyblue;
 }
 input {
     width:200px;
