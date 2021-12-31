@@ -1,0 +1,118 @@
+
+body {
+    background-image: url('./../images/white.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+ #new
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+  
+}  
+
+
+
+#covid
+{
+   background-color: darkorange;
+   margin:20px;
+   border-radius: 120px; 
+   padding:10px;
+   width:300px;
+   height:50px;
+   font-size: 20px;
+
+}
+#safe
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+
+}
+#tech
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+
+}
+#easy
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px;
+    font-size: 20px;
+
+}
+#offer
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px; 
+    font-size: 20px;
+
+}
+#wallet
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px; 
+    font-size: 20px;
+}
+#epool
+{
+    background-color: darkorange;
+    margin:20px;
+    border-radius: 120px; 
+    padding:10px;
+    width:300px;
+    height:50px; 
+    font-size: 20px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  

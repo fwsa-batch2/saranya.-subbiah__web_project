@@ -1,16 +1,10 @@
 
      body {
-        background-image: url('./../images/red.jpeg');
+        background-image: url('./../images/rbus.jpg');
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
     }
- button{
-     width: 200px;
-     background-color:wheat;
-     padding: 10px 10px;
-     border:transparent;
-}
 input {
     width:200px;
     border-radius: 10px;

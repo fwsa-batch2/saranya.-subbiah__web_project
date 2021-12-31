@@ -1,99 +1,74 @@
-let customername = [];
-function PageOnLoad() {
-    const user = JSON.parse(localStorage.getItem("submit"));
-    if (user != null) {
-        customername = user;
-    }
-}
 
+let userdetails = [];
+
+function onPageLoad() {
+  console.group("onPageLoad");
+  let users = JSON.parse(localStorage.getItem('username'));
+  console.log(users)
+  if (users == null){
+    userdetails = []
+  }else {
+    userdetails = users;
+  }
+  console.groupEnd("onPageLoad")
+}
 
 function submit_function() {
-    event.preventDefault();
-    const mailid = document.getElementById("Email_Id").value;
-    const pass = document.getElementById("enter_pass").value;
-    const conpass = document.getElementById("confirm_pass").value;
-
-    let customerdetails = {
-        "mail_id": mailid,
-        "enter_pass": pass,
-        "confirm_pass": conpass
-    }
-    const Alreadyexists = validmail(mailid);
-
-    console.log(Alreadyexists);
-
-    if (Alreadyexists) {
-        alert("Email-id Already Exists");
-        return;
-    }
+  event.preventDefault();
+  console.group("submitHandlers");
+  let email = document.getElementById("email").value.toLowerCase();
+  let password = document.getElementById("password").value;
 
 
-    const checkpassword = checking(pass, conpass);
+  let customerDetail = {
+    "email": email,
+    "password": password
+  }
+  console.table(customerDetail);
+  let isEmailAlreadyExist = emailValid(email,password);
 
-    console.log(checkpassword)
+  console.log(isEmailAlreadyExist);
+  if (isEmailAlreadyExist) {
+    userdetails.push(customerDetail);
+    let login = JSON.stringify(userdetails);
+    localStorage.setItem("username", login);
+    window.location.href = "../../pages/home.html";
+   
+   
+  }
+  else{ 
+   
+    alert("Please Sign in!");
+    return;
+  }
+   console.groupEnd("submitHandlers") ;
+  
 
-    if (checkpassword) {
-        customername.push(customerdetails);
-        let check = JSON.stringify(customername)
-        localStorage.setItem("submit", check);
-        window.location.href = "/pages/tripdet.html"
-    }
-    else {
-        alert("please check your password");
-    }
 
 }
 
 
 
-function validmail(current_email) {
-    let user = JSON.parse(localStorage.getItem("submit"));
-    let used = false;
+function emailValid(current_email,current_password) {
+  event.preventDefault();
+  console.group("emailValid");
+  let userList = JSON.parse(localStorage.getItem("registersname"));
 
-    if (user) {
-        for (i = 0; i < user.length; i++) {
-            const userlist = user[i];
-            const email = userlist.mail_id;
+  let isUsed = false;
+  
+  for (i = 0; i < userList.length; i++) {
 
-            if (current_email == email) {
-                used = true;
-                break;
-            }
-
-        }
+    let user = userList[i];
+    let email = user.email;
+    let password =user.password;
+    if (current_password === password && current_email === email) {
+      console.log("password and email already exists");
+      isUsed = true;
+      break;
     }
-    return used;
+  }
+  console.groupEnd("emailValid");
+  return isUsed;
 }
 
-
-function checking(pass, conpass) {
-    if (pass == conpass) {
-        return true;
-    }
-    else {
-        return false;
-    }
-
-}
-
-PageOnLoad();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+onPageLoad()

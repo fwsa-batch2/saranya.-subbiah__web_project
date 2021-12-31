@@ -1,0 +1,22 @@
+body {
+    background-image: url('./../images/home.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#container
+{
+    background-color:dimgrey;
+    padding:50px;
+    margin-left:30%;
+    border-radius: 15%;
+    height:10%;
+    width:20%;
+    margin-top: 4%;
+}
+input {
+    width:200px;
+    border-radius: 10px;
+    padding : 10px 10px;
+    margin-top:20px;
+}

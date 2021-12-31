@@ -1,39 +1,47 @@
-<html>
-    <head> 
-        <link rel ="stylesheet" href="../assets/css/login.css">
-    </head>
-        <body>
-           <h1 align="center" style="color: darkgreen; font-family: Verdana, Geneva, Tahoma, sans-serif;">EasyWay</h1>
-           
-            <img src="../assets/images/redbus.gif" style="margin-left: 70%;">
-        
-            <form onsubmit="submit_function()">
-             <table  id="container"> 
-                
-                 <tr>
-                 <th style="font-family:sans-serif; font-size:xx-large; color:aqua"> LOGIN </th> 
-                 </tr>
-                   <tr>
-                   <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white">E-Mail :</th>
-                   <td><input type="text" placeholder="Enter user name" id="username"required></td>
-                   </tr>
-                    
-                    <tr>
-                    <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white">Create Password :</th>
-                    <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001" minlength="8" required></td>
-                    </tr>
-                    
-                    <tr>
-                    <th style="font-family:Arial, Helvetica, sans-serif; font-size: x-large; color:white">Confirm Password :</th>
-                    <td><input type="password" id="confirm_pass" placeholder="Enter your password" required></td>
-                    </tr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EasyWay Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
 
-                    <tr>
-                        <td><center><input type="button"  id="btnSUBMIT" value="Back"></center></td>
-                        <td><center><input type="button"  id="btnBACK" value="Submit"></center></td>
-                    </tr>
-             </table>
-             
-            </form> 
-        </body>
+<body>
+    <form onsubmit="submit_function()">
+        <img src alt="../assets/images/easyway.jpeg" style="margin-left: 70%; margin-top: 10%;">
+        <div class="mail">
+
+            <table id="container">
+
+                <tr>
+                    <th style="font-family:sans-serif; font-size:xx-large; color:aqua"> LOGIN </th>
+                </tr>
+                <tr>
+                    <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white">E-Mail :</th>
+                    <td><input type="Email-id" id="Email_Id" placeholder="Enter Mail-id" required></td>
+                </tr>
+
+                <tr>
+                    <th style="font-family: Arial, Helvetica, sans-serif; font-size: x-large; color:white"> Password :
+                    </th>
+                    <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001"
+                            minlength="8" required></td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <center><input type="button" id="btnBACK" value="Back"
+                                onclick="window.location.href='/index.html';"></center>
+                    </td>
+                    <td>
+                        <center><input type="button" id="btnSUBMIT" value="Submit"> </center>
+                    </td>
+                </tr>
+            </table>
+
+    </form>
+    </div>
+    <script src="../assets/javascript/login.js"></script>
+</body>
+
 </html>
