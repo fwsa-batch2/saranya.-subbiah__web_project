@@ -1,6 +1,7 @@
 let customername = [];
 function PageOnLoad() {
-    const user = JSON.parse(localStorage.getItem("login"));
+    event.preventDefault();
+    let user = JSON.parse(localStorage.getItem("login"));
     if (user != null) {
         customername = user;
     }
@@ -9,10 +10,10 @@ function PageOnLoad() {
 
 function submit_function() {
     event.preventDefault();
-    const username = document.getElementById("username").value;
-    const mailid = document.getElementById("Email_Id").value;
-    const pass = document.getElementById("enter_pass").value;
-    const conpass = document.getElementById("confirm_pass").value;
+    let username = document.getElementById("username").value;
+    let mailid = document.getElementById("Email_Id").value;
+    let pass = document.getElementById("enter_pass").value;
+    let conpass = document.getElementById("confirm_pass").value;
 
     let customerdetails = {
         "username": username,
@@ -20,7 +21,7 @@ function submit_function() {
         "enter_pass": pass,
         "confirm_pass": conpass
     }
-    const Alreadyexists = validmail(mailid);
+    let Alreadyexists = validmail(mailid);
 
     console.log(Alreadyexists);
 
@@ -30,7 +31,7 @@ function submit_function() {
     }
 
 
-    const checkpassword = checking(pass, conpass);
+    let checkpassword = checking(pass, conpass);
 
     console.log(checkpassword)
 
@@ -54,8 +55,8 @@ function validmail(current_email) {
 
     if (user) {
         for (i = 0; i < user.length; i++) {
-            const userlist = user[i];
-            const email = userlist.mail_id;
+            let userlist = user[i];
+            let email = userlist.mail_id;
 
             if (current_email == email) {
                 used = true;

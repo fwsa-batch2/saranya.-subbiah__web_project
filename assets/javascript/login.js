@@ -2,7 +2,7 @@
 let userdetails = [];
 
 function onPageLoad() {
-  console.group("onPageLoad");
+  // console.group("onPageLoad");
   let users = JSON.parse(localStorage.getItem('username'));
   console.log(users)
   if (users == null){
@@ -10,7 +10,7 @@ function onPageLoad() {
   }else {
     userdetails = users;
   }
-  console.groupEnd("onPageLoad")
+  // console.groupEnd("onPageLoad")
 }
 
 function submit_function() {
@@ -24,15 +24,15 @@ function submit_function() {
     "email": email,
     "password": password
   }
-  console.table(customerDetail);
+  // console.table(customerDetail);
   let isEmailAlreadyExist = emailValid(email,password);
 
-  console.log(isEmailAlreadyExist);
+  // console.log(isEmailAlreadyExist);
   if (isEmailAlreadyExist) {
     userdetails.push(customerDetail);
     let login = JSON.stringify(userdetails);
     localStorage.setItem("username", login);
-    window.location.href = "../../pages/home.html";
+    window.location.href = "./../../index.html";
    
    
   }
@@ -41,7 +41,7 @@ function submit_function() {
     alert("Please Sign in!");
     return;
   }
-   console.groupEnd("submitHandlers") ;
+  //  console.groupEnd("submitHandlers") ;
   
 
 

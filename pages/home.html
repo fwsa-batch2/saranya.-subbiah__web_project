@@ -18,34 +18,47 @@
             <th class="table" scope="row"></th><td><button style="border-style: none; background-color: black; font-size: large; padding: 3%; border-radius: 30%; margin-left:5%; width:200px; color:white" onclick="window.location.href='./help.html';">
               Help
             </button></td>
-           <th class="table" scope="row"></th> <td><button style="border-style: none; background-color: black; font-size: large; padding: 3%; border-radius: 30%; margin-left:5%; width:200px; color:white" onclick="window.location.href='./myacc.html';">
-              My Account
-            </button></td>
           </tr>
         </table>
-        
-        <form onsubmit="submit_function()">
-            <table id="container">
+        <form onsubmit="travelAgency()">
+          <table id="PPM_CHN">
               <caption></caption>
+                  <tr>
+                      <th class="table" scope="row"> Source : </th>
+                      <td><input type="text" id="source" placeholder="source" required></td>
+                  </tr>
+                  <tr>
+                      <th class="table" scope="row">Destination :</th>
+                      <td><input type="text" id="destination" placeholder="destination" required></td>
+                  </tr>
+  
+                  <tr>
+                      <th class="table" scope="row">Start :</th>
+                      <td><input type="time" id="start" placeholder="start" required></td>
+                  </tr> 
+  
+   
+                  <tr>
+                      <th class="table" scope="row">End :</th>
+                      <td><input type="time" id="end" placeholder="end" required></td>
+                  </tr>
+                  <tr>
+                    <th class="table" scope="row">Date :</th>
+                    <td><input type="date" name="Date" min="2022-01-15" max="2022-12-31" id="date" required></td>
+               </tr>
+                  <tr>
+                    <th class="table" scope="row">No. of Seats :</th>:</th>
+                    <td><input type="safety measures" id="seats" placeholder="seats"></td>
+                  </tr>
+              </table>
+              <input type="submit" id="btnSUBMIT">
+      </form>
       
-              <tr>
-                <th class="table" scope="row"><em> Source:</em></th>
-                <td><input type="text" id="source" placeholder="Enter Source" required></td>
-              </tr>
-              <tr>
-                <th class="table" scope="row"><em> Destination:</em></th>
-                <td><input type="Email-id" id="destination" placeholder="Enter Destination" required></td>
-              </tr>
-              <tr>
-                <th class="table" scope="row"><em>Date:</em></th>
-                <td><input type="date" name="Date" min="2021-12-25" max="2022-12-31" required></td>
-           </tr>
-           </table>
-            </form>
-            <img src alt="./../assets/images/busicon.png" width="30%" height="300" margin-bottom="10%" a href="./buses.html"></a>
             
+            <img src="./../assets/images/busicon.png" alt="bus" width="30%" height="300" margin-bottom="10%" a href="./buses.html"></a>
+            <script src="../assets/javascript/main.js"></script>
       
       
           </div>
     </body>
-</html> 
+</html>
