@@ -1,24 +1,25 @@
 let bus = "";
 
 function PageOnLoad() {
-    const busInlist = JSON.parse(localStorage.getItem("details"))
+    const busInlist = JSON.parse(localStorage.getItem("source and destination"))
     if (busInlist !== null) {
         bus = busInlist;
     }
 console.log(busInlist);
 }
 
-let busDetails = JSON.parse(localStorage.getItem("detils"));
+let busDetails = JSON.parse(localStorage.getItem("source and destination"));
+console.log(busDetails);
 for (let i of busDetails) {
     let placeofsource = i.source;
+    console.log(placeofsource)
     let placeofdestination = i.destination;
     let timeofstart = i.start;
     let timeofend = i.end;
     let dateoftravel = i.date;
-    let numberofseats = i.seat;
-
+    let numberofseats = i.seats;
     bus +=
-    <div class="buslist">
+    `<div class="buslist">
     <p class="busdetails"> Source : <span class="sourcespan">
     ${placeofsource}</span></p>
     <p class="busdetails"> Destination :<span class="destinationspan">
@@ -31,7 +32,7 @@ for (let i of busDetails) {
     ${dateoftravel}</span></p>
     <p class="busdetails"> No. Of Seats :<span class="seatspan">
     ${numberofseats}</span></p>
-</div>
+</div>`
 }
 
 let div = document.getElementById("buslisting");

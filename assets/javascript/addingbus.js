@@ -1,6 +1,5 @@
 let customername = [];
 function PageOnLoad() {
-    event.preventDefault();
     let buses = JSON.parse(localStorage.getItem("source and destination"));
     if (buses != null) {
       list = buses;
@@ -8,8 +7,10 @@ function PageOnLoad() {
 }
  
 function travelAgency(event) {
+    console.log("hello")
     event.preventDefault();
     let source = document.getElementById("source").value;
+    console.log(source);
     let destination = document.getElementById("destination").value;
     let start = document.getElementById("start").value;
     let end = document.getElementById("end").value;
@@ -24,6 +25,8 @@ function travelAgency(event) {
         "date": date,
         "seats": seats
     }
+
+    console.log(customeropinion);
 
     customername.push(customeropinion);
     let check = JSON.stringify(customername)

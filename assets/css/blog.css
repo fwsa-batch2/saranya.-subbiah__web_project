@@ -6,9 +6,21 @@
           background-size: cover;
     }
     
-#chen {
+#chenpic {
       width:600px; 
       height:400px;
       margin-left: 28%;
-      
+}
+#chen {
+      margin-left: 20%;
+      margin-top:5%;
+}
+#madpic {
+      width:800px; 
+      height:800px;
+      margin-left: 35%;
+}
+#mad {
+      margin-left: 20%;
+      margin-top:3%;  
 }
