@@ -32,7 +32,7 @@ function submit_function() {
     userdetails.push(customerDetail);
     let login = JSON.stringify(userdetails);
     localStorage.setItem("username", login);
-    window.location.href = "./../../index.html";
+    window.location.href = "./../../pages/home.html";
    
    
   }

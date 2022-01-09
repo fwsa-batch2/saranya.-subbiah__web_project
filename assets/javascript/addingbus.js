@@ -7,7 +7,7 @@ function PageOnLoad() {
     }
 }
  
-function travelAgency() {
+function travelAgency(event) {
     event.preventDefault();
     let source = document.getElementById("source").value;
     let destination = document.getElementById("destination").value;

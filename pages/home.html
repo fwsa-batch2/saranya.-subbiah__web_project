@@ -20,7 +20,7 @@
             </button></td>
           </tr>
         </table>
-        <form onsubmit="travelAgency()">
+        <form onsubmit="travelAgency(event)">
           <table id="PPM_CHN">
               <caption></caption>
                   <tr>
@@ -51,14 +51,19 @@
                     <td><input type="safety measures" id="seats" placeholder="seats"></td>
                   </tr>
               </table>
-              <input type="submit" id="btnSUBMIT">
+              <input type="button" id="btnSUBMIT" value="Submit"
+              onclick="window.location.href='/pages/list.html';">
+              
       </form>
       
             
             <img src="./../assets/images/busicon.png" alt="bus" width="30%" height="300" margin-bottom="10%" a href="./buses.html"></a>
-            <script src="../assets/javascript/main.js"></script>
+            <script src="../assets/javascript/addingbus.js"></script>
       
       
+          </div>
+          <div id="buslisting">
+
           </div>
     </body>
 </html>
