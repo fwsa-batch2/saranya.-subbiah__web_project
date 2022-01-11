@@ -14,7 +14,7 @@ function onPageLoad() {
 }
 
 function submit_function(event) {
-  event.preventDefault(event);
+  event.preventDefault();
   console.group("submitHandlers");
   let email = document.getElementById("email").value.toLowerCase();
   let password = document.getElementById("password").value;
@@ -48,8 +48,8 @@ function submit_function(event) {
 
 
 
-function emailValid(current_email,current_password) {
-  event.preventDefault(event);
+function emailValid(current_email,current_password, event) {
+  event.preventDefault();
   console.group("emailValid");
   let userList = JSON.parse(localStorage.getItem("registersname"));
 

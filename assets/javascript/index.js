@@ -1,6 +1,6 @@
 let customername = [];
-function PageOnLoad() {
-    event.preventDefault();
+function PageOnLoad(event) {
+    event.preventDefault(event);
     let user = JSON.parse(localStorage.getItem("login"));
     if (user != null) {
         customername = user;
