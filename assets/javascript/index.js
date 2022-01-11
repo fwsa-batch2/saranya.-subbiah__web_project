@@ -8,8 +8,8 @@ function PageOnLoad() {
 }
 
 
-function submit_function() {
-    event.preventDefault();
+function submit_function(event) {
+    event.preventDefault(event);
     let username = document.getElementById("username").value;
     let mailid = document.getElementById("Email_Id").value;
     let pass = document.getElementById("enter_pass").value;

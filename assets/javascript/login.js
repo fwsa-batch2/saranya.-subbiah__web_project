@@ -13,8 +13,8 @@ function onPageLoad() {
   
 }
 
-function submit_function() {
-  event.preventDefault();
+function submit_function(event) {
+  event.preventDefault(event);
   console.group("submitHandlers");
   let email = document.getElementById("email").value.toLowerCase();
   let password = document.getElementById("password").value;
