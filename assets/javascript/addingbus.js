@@ -2,7 +2,7 @@ let customername = [];
 function PageOnLoad() {
     let buses = JSON.parse(localStorage.getItem("source and destination"));
     if (buses != null) {
-     let list = buses;
+      list = buses;
     }
 }
  
