@@ -8,7 +8,7 @@ function PageOnLoad() {
  
 function travelAgency(event) {
     console.log("hello")
-    event.preventDefault();
+    event.preventDefault(event);
     let source = document.getElementById("source").value;
     console.log(source);
     let destination = document.getElementById("destination").value;

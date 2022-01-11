@@ -39,7 +39,6 @@ function submit_function() {
   else{ 
    
     alert("Please Sign in!");
-    return;
   }
   
   
@@ -50,7 +49,7 @@ function submit_function() {
 
 
 function emailValid(current_email,current_password) {
-  event.preventDefault();
+  event.preventDefault(event);
   console.group("emailValid");
   let userList = JSON.parse(localStorage.getItem("registersname"));
 
