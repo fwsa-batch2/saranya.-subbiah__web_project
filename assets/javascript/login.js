@@ -55,7 +55,7 @@ function emailValid(current_email,current_password, event) {
 
   let isUsed = false;
   
-  for (let i of userlist) {
+  for (let i of userList) {
 
     let user = i.email;
     let email = user.email;
