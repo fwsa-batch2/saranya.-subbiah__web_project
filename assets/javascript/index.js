@@ -54,7 +54,7 @@ function validmail(current_email) {
     let used = false;
 
     if (user) {
-        for (i = 0; i < user.length; i++) {
+        for ( let i = 0; i < user.length; i++) {
             let userlist = user[i];
             let email = userlist.mail_id;
 
@@ -71,7 +71,7 @@ function validmail(current_email) {
 
 function checking(pass, conpass) {
     if (pass == conpass) {
-        return true;
+        
     }
     else {
         return false;
