@@ -71,7 +71,7 @@ function validmail(current_email) {
 
 function checking(pass, conpass) {
     if (pass == conpass) {
-        break;
+        return true;
     }
     else {
         return false;
