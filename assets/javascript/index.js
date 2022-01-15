@@ -1,6 +1,6 @@
 let customername = [];
 function PageOnLoad(event) {
-    event.preventDefault(event);
+    event.preventDefault();
     let user = JSON.parse(localStorage.getItem("login"));
     if (user != null) {
         customername = user;
@@ -9,7 +9,7 @@ function PageOnLoad(event) {
 
 
 function submit_function(event) {
-    event.preventDefault(event);
+    event.preventDefault();
     let username = document.getElementById("username").value;
     let mailid = document.getElementById("Email_Id").value;
     let pass = document.getElementById("enter_pass").value;
@@ -79,7 +79,6 @@ function checking(pass, conpass) {
 
 }
 
-PageOnLoad();
 
 
 

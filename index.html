@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>EasyWay</title>
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
+
 <body>
-  <h1>EasyWay</h1>
-  
-  
-    <div class="login">
-      <img src="./assets/images/manage.jpeg" alt="manage" width="33%" height="400">
-      <img src="./assets/images/track.jpeg" alt="track" width="33%" height="400">
-      <img src="./assets/images/easy.jpeg"  alt="easy" width="33%" height="400">
-      </div>
-      <div class="container">
-      <form onsubmit="submit_function(event)">
+  <h1 style="margin-left: 45%">EasyWay</h1>
+
+
+  <div class="login">
+    <img src="./assets/images/manage.jpeg" alt="manage" width="33%" height="400">
+    <img src="./assets/images/track.jpeg" alt="track" width="33%" height="400">
+    <img src="./assets/images/easy.jpeg" alt="easy" width="33%" height="400">
+  </div>
+  <div class="container">
+    <form onsubmit="submit_function(event)">
       <table textalign="center">
-      <caption></caption>
+        <caption></caption>
         <tr>
           <th class="table" scope="row"> User name :</th>
           <td><input type="text" placeholder="Enter user name" id="username" required></td>
@@ -27,7 +29,8 @@
         </tr>
         <tr>
           <th class="table" scope="row">Create Password :</th>
-          <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001" minlength="8" required></td>
+          <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001" minlength="8"
+              required></td>
         </tr>
         <tr>
           <th class="table" scope="row">Confirm Password :</th>
@@ -35,8 +38,9 @@
         </tr>
       </table>
       <input type="submit" id="btnLOGIN">
-      </form>
-      </div>
+    </form>
+  </div>
   <script src="./assets/javascript/index.js"></script>
 </body>
+
 </html>
