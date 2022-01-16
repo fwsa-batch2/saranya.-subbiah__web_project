@@ -2,13 +2,12 @@ let customername = [];
 function PageOnLoad() {
     let buses = JSON.parse(localStorage.getItem("source and destination"));
     if (buses != null) {
-       customername = buses;
+      customername=buses;
     }
 }
  
 function travelAgency(event) {
-    console.log("hello")
-    event.preventDefault(event);
+    event.preventDefault();
     let source = document.getElementById("source").value;
     console.log(source);
     let destination = document.getElementById("destination").value;
@@ -30,5 +29,8 @@ function travelAgency(event) {
 
     customername.push(customeropinion);
     let check = JSON.stringify(customername)
-    localStorage.setItem("source and destination", check);
+     localStorage.setItem("source and destination", check);
+    //    localStorage.setItem("source and destination", JSON.stringify(customername));
+       window.location.href = "../../pages/list.html";  
 }
+PageOnLoad();

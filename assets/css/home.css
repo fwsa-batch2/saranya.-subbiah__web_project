@@ -1,12 +1,33 @@
 body {
-    background-image: url('./../images/home.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+   background-color:#021826
 }
+#pages {
+    background-color:hsl(203, 52%, 5%);
+    height: 50px;
+    padding-top: 1%;
+    text-align: center;
+    }
+    
+    a {
+    margin-left: 10%;
+    text-decoration: none;
+    color: white;
+    }
+    
+    #wel {
+    width: 20%;
+    margin: auto;
+    margin-top: 30%;
+    color: white;
+    }
+    
+    a:hover {
+    background-color:#91C4D9;
+    border-radius: 10%;
+    }
 #PPM_CHN
 {
-    background-color:dimgrey;
+    background-color:#91C4D9;
     padding:50px;
     margin-left:15%;
     border-radius: 15%;
@@ -14,7 +35,7 @@ body {
     width:40%;
     margin-top: 4%;
     font-size:30px;
-    color:deepskyblue;
+    color:#021826;
 }
 input {
     width:200px;
@@ -24,5 +45,84 @@ input {
 }
 #btnSUBMIT
 {
-    margin-left: 40%;
+    margin-left: 30%;
+}
+h1{
+    color: whitesmoke;
+}
+#offers img {
+    border-radius: 10%;
+    transition:transform;
+}
+#frst:hover  {
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#frst {
+    width: 20%;
+    height: 10%;
+    margin-left: 10%;
+}
+#gold:hover {
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#gold {
+    width: 20%;
+    height: 10%;
+    margin-left: 10%;
+}
+#holiday:hover{
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#holiday {
+    width: 20%;
+    height: 10%;
+    margin-left: 10%;
+}
+#guide:hover {
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#guide {
+    width: 20%;
+    height: 10%;
+    margin-left: 10%; 
+}
+#slice:hover{
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#slice {
+    width: 380px;
+    height: 200px;
+    margin-left: 10%;  
+}
+#amazon:hover{
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#amazon {
+    width: 380px;
+    height: 200px;
+    margin-left: 9%;
+}
+#post:hover{
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#post {
+    width: 380px;
+    height: 200px;
+    margin-left: 10%;
+}
+#bounce:hover{
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#bounce {
+    width: 380px;
+    height: 200px;
+    margin-left: 9%;
+}
+#special:hover{
+    box-shadow: 10px 10px 20px #91C4D9;; 
+}
+#special {
+    width: 380px;
+    height: 200px;
+    margin-left: 9%;
 }

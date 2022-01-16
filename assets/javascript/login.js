@@ -13,54 +13,39 @@ function onPageLoad() {
   
 }
 
-function submit_function(event) {
+
+function submithandler(event) {
   event.preventDefault();
-  console.group("submitHandlers");
-  let email = document.getElementById("email").value.toLowerCase();
-  let password = document.getElementById("password").value;
-
-
-  let customerDetail = {
-    "email": email,
-    "password": password
+  const email = document.getElementById("Email_Id").value;
+  const Pass = document.getElementById("enter_pass").value;
+  let isEmailAlreadyExist = emailValid(email,Pass);
+  if (isEmailAlreadyExist !== true) {
+    alert("Invalid mail or password")
+    return null;
   }
-  
-  let isEmailAlreadyExist = emailValid(email,password);
-
-
-  if (isEmailAlreadyExist) {
-    userdetails.push(customerDetail);
-    let login = JSON.stringify(userdetails);
+  else {
+    alert("WELCOME")
+    window.location.href="./../../pages/home.html"
     localStorage.setItem("username", login);
-    window.location.href = "./../../pages/home.html";
-   
-   
   }
-  else{ 
-   
-    alert("Please Sign in!");
-  }
-  
-  
-
-
 }
 
 
 
-function emailValid(current_email,current_password, event) {
-  event.preventDefault();
+
+
+function emailValid(current_email,current_password) {
   console.group("emailValid");
-  let userList = JSON.parse(localStorage.getItem("registersname"));
+  let userList = JSON.parse(localStorage.getItem("login"));
 
   let isUsed = false;
   
   for (let i of userList) {
 
-    let user = i.email;
-    let email = user.email;
-    let password =user.password;
-    if (current_password === password && current_email === email) {
+    let user = i;
+    let mailid = user.mail_id;
+    let password =user.enter_pass;
+    if (current_password === password && current_email === mailid) {
       console.log("password and email already exists");
       isUsed = true;
       break;

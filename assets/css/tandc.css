@@ -1,7 +1,46 @@
 
     body{
-          background-image:url(../images/multi.jpeg);
-          background-position: center;
-          height: 100;
-          background-size: cover;
+          background-color: #4B8CA6;
         }
+       #res {
+       color: #021826
+       
+        #245C73
+        #4B8CA6
+        #91C4D9
+       }
+    #abt{
+      font-size:20px;
+       color:#021826; 
+       margin-left: 40%;
+    }
+   #safe{
+    font-size:40px;
+    color:#021826; 
+    margin-left: 30%;
+   } 
+   #pages {
+    margin-top: 2%;
+    background-color: #02050A;
+    height: 50px;
+    padding-top: 1%;
+    text-align: center;
+    }
+    
+    a {
+    margin-left: 10%;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    }
+    
+    #wel {
+    width: 20%;
+    margin: auto;
+    margin-top: 30%;
+    color: white;
+    }
+    
+    a:hover {
+    background-color:#91C4D9;
+    }

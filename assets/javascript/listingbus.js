@@ -19,21 +19,18 @@ for (let i of busDetails) {
     let dateoftravel = i.date;
     let numberofseats = i.seats;
     bus +=
-    `<div class="buslist">
-    <p class="busdetails"> Source : <span class="sourcespan">
-    ${placeofsource}</span></p>
-    <p class="busdetails"> Destination :<span class="destinationspan">
-    ${placeofdestination}</span></p>
-    <p class="busdetails"> Start :<span class="startspan">
-    ${timeofstart}</span></p>
-    <p class="busdetails"> End :<span class="endspan">
-    ${timeofend}</span></p>
-    <p class="busdetails"> Date :<span class="datespan">
-    ${dateoftravel}</span></p>
-    <p class="busdetails"> No. Of Seats :<span class="seatspan">
-    ${numberofseats}</span></p>
+   ` <div class="buslist">
+    <p class="busdetails" style="color: #021826"> Source : <span class="sourcespan" style="color: whitesmoke">${placeofsource}</span></p>
+    <p class="busdetails" style="color: #021826"> Destination :<span class="destinationspan" style="color: whitesmoke">${placeofdestination}</span></p>
+    <p class="busdetails" style="color: #021826"> Start :<span class="startspan" style="color: whitesmoke">${timeofstart}</span></p>
+    <p class="busdetails" style="color: #021826"> End :<span class="endspan" style="color: whitesmoke">${timeofend}</span></p>
+    <p class="busdetails" style="color: #021826"> Date :<span class="datespan" style="color: whitesmoke">${dateoftravel}</span></p>
+    <p class="busdetails" style="color: #021826"> No. Of Seats :<span class="seatspan" style="color: whitesmoke">${numberofseats}</span></p>
+    <hr>
 </div>`
+
 }
 
 let div = document.getElementById("buslisting");
 div.innerHTML = bus;
+PageOnLoad();

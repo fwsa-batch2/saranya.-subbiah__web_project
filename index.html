@@ -2,45 +2,73 @@
 <html lang="en">
 
 <head>
-  <title>EasyWay</title>
-  <link rel="stylesheet" href="assets/css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyWay</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-  <h1 style="margin-left: 45%">EasyWay</h1>
+    <div id="easy">
+        <img src="./assets/images/logo.jpeg" alt="logo">
+    </div>
+    <div id="pages">
+        <a href="./pages/home.html">Home</a>
+        <a href="./pages/about.html">About us</a>
+        <a href="./pages/contact.html">Contact us</a>
+        <a href="./pages/blog.html">Blogs</a>
+        <a href="./pages/help.html">Help</a>
+        <a href="./pages/signup.html">SignUp</a>
+        <a href="./pages/login.html">Login</a>
+    </div>
+    <div id="bus">
+        <img src="./../assets/images/wbus.jpeg" alt="wbus">
+
+    </div>
+    <div id="serve">
+        Our Services
+        <br>
+
+    </div>
+    <div id="img">
+        <div id="corp">
+
+            <img src="../assets/images/corp.jpeg" alt="corp">
+            <strong>Corporate Visit</strong>
+        </div>
+        <div id="wed">
+
+            <img src="../assets/images/wed.jpg" alt="wed">
+            <strong>Wedding</strong>
+        </div>
+        <div id="wine">
+
+            <img src="../assets/images/wine.jpg" alt="wine">
+            <strong>Wine Trips</strong>
+
+        </div>
+        <div id="fam">
+
+            <img src="../assets/images/fam.jpg" alt="fam">
+            <strong>Family Trips</strong>
+
+        </div>
+        <div id="tem">
+
+            <img src="../assets/images/temple.jpg" alt="temple">
+            <strong> Temple Visit</strong>
+
+        </div>
+        <div id="school">
+
+            <img src="../assets/images/scl.jpg" alt="school">
+            <strong> School Trips</strong>
+
+        </div>
+    </div>
 
 
-  <div class="login">
-    <img src="./assets/images/manage.jpeg" alt="manage" width="33%" height="400">
-    <img src="./assets/images/track.jpeg" alt="track" width="33%" height="400">
-    <img src="./assets/images/easy.jpeg" alt="easy" width="33%" height="400">
-  </div>
-  <div class="container">
-    <form onsubmit="submit_function(event)">
-      <table textalign="center">
-        <caption></caption>
-        <tr>
-          <th class="table" scope="row"> User name :</th>
-          <td><input type="text" placeholder="Enter user name" id="username" required></td>
-        </tr>
-        <tr>
-          <th class="table" scope="row">Email-Id :</th>
-          <td><input type="Email-id" id="Email_Id" placeholder="Enter Mail-id" required></td>
-        </tr>
-        <tr>
-          <th class="table" scope="row">Create Password :</th>
-          <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001" minlength="8"
-              required></td>
-        </tr>
-        <tr>
-          <th class="table" scope="row">Confirm Password :</th>
-          <td><input type="password" id="confirm_pass" placeholder="Enter your password" required></td>
-        </tr>
-      </table>
-      <input type="submit" id="btnLOGIN">
-    </form>
-  </div>
-  <script src="./assets/javascript/index.js"></script>
 </body>
 
 </html>

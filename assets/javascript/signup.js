@@ -1,13 +1,12 @@
 let customername = [];
-function PageOnLoad(event) {
-    event.preventDefault();
+function PageOnLoad() {
     let user = JSON.parse(localStorage.getItem("login"));
     if (user != null) {
         customername = user;
     }
 }
 
-
+PageOnLoad();
 function submit_function(event) {
     event.preventDefault();
     let username = document.getElementById("username").value;
@@ -21,15 +20,15 @@ function submit_function(event) {
         "enter_pass": pass,
         "confirm_pass": conpass
     }
+    
     let Alreadyexists = validmail(mailid);
 
-    console.log(Alreadyexists);
-
-    if (Alreadyexists) {
-        alert("Email-id Already Exists");
-        return;
+    if (pass!= conpass) {
+      alert("Incorrect password");   
     }
-
+    else if(Alreadyexists){
+      alert("Email Already Exist");  
+    }
 
     let checkpassword = checking(pass, conpass);
 
@@ -56,7 +55,7 @@ function validmail(current_email) {
     if (user) {
       for (let i of user )  {
             let userlist = i.email;
-            let email = userlist.mail_id;
+            let email = customername.Email_Id;
 
             if (current_email == email) {
                 used = true;
@@ -76,7 +75,6 @@ function checking(pass, conpass) {
     else {
         return false;
     }
-
 }
 
 

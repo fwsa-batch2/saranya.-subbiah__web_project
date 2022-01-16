@@ -8,7 +8,7 @@ body {
 {
     margin-left: 60%;
     margin-top: 3%;
-    background-color:darkslateblue;
+    background-color:#021826;
     padding: 5%;
     height: 10%;
     border-radius: 12%;
@@ -19,7 +19,7 @@ body {
 #btnSUBMIT
 {
  
-    background-color:deepskyblue;
+    background-color:#4B8CA6;
     width:35%;
     height: 3%;
     font-style: italic;
@@ -27,8 +27,8 @@ body {
  }
  #btnBACK
  {
-     background-color: deepskyblue;
-     width: 35%;
+     background-color:#4B8CA6;
+     width: 45%;
      height: 3%;
      font-style: italic;
  }

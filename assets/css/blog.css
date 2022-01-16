@@ -1,26 +1,68 @@
 
     body{
-          background-image:url("../images/whitebg.jpg");
-          background-position: center;
-          height: 100;
-          background-size: cover;
+         background-color:#4B8CA6; ;
     }
-    
-#chenpic {
+   #blog{
+      font-size:50px;
+      color:#021826; 
+      margin-left: 38%;
+   } 
+#chenpic img {
       width:600px; 
       height:400px;
-      margin-left: 28%;
+      margin-left: 30%;
 }
 #chen {
-      margin-left: 20%;
-      margin-top:5%;
+      margin-left: 10%;
+      margin-top:3%;
 }
-#madpic {
-      width:800px; 
-      height:800px;
-      margin-left: 35%;
+#madpic img {
+      width:600px; 
+      height:400px;
+      margin-left: 30%;
 }
 #mad {
-      margin-left: 20%;
+      margin-left: 10%;
       margin-top:3%;  
+}
+#compic img{
+      width:600px; 
+      height:400px;
+      margin-left: 30%;
+}
+#com {
+      margin-left: 10%;
+      margin-top:3%;   
+}
+#tvlpic img{
+      width:600px; 
+      height:400px;
+      margin-left: 30%;
+}
+#tvl{
+      margin-left: 10%;
+      margin-top:3%;  
+}
+#tnjpic img{
+      width:600px; 
+      height:400px;
+      margin-left: 30%; 
+}
+#tnj{
+      margin-left: 10%;
+      margin-top:3%;
+}
+#bngpic img{
+      width:600px; 
+      height:400px;
+      margin-left: 30%;  
+}
+#bng{
+      margin-left: 10%;
+      margin-top:3%; 
+}
+#safe{
+      font-size:50px;
+      color:#021826; 
+      margin-left: 23%; 
 }

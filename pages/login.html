@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>EasyWay Login</title>
     <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 
 <body>
-    <form onsubmit="submit_function(event)">
-        <img src="../assets/images/easyway.jpeg" alt="easyway" style="margin-left: 70%; margin-top: 10%;">
+    <form onsubmit="submithandler(event)">
+        <img src="../assets/images/logo.jpeg" alt="easyway" style="margin-left: 65%; margin-top: 10%; width: 300px;">
         <div class="mail">
 
-           <table id="container">
-            <caption></caption>
+            <table id="container">
+                <caption></caption>
                 <tr>
                     <th class="table" scope="row"> LOGIN </th>
                 </tr>
@@ -24,16 +25,15 @@
                     <th class="table" scope="row"> Password :</th>
                     <td><input type="password" id="enter_pass" placeholder="Enter your password" min="00000001"
                             minlength="8" required></td>
-                </tr> 
+                </tr>
 
 
                 <tr>
                     <td>
-                        <input type="button" id="btnBACK" value="Back"
-                                onclick="window.location.href='/index.html';">
+                        <input type="button" id="btnBACK" value="Back" onclick="window.location.href='/index.html';">
                     </td>
                     <td>
-                        <input type="submit" id="btnSUBMIT" value="Submit"> 
+                        <input type="submit" id="btnSUBMIT" value="Submit">
                     </td>
                 </tr>
             </table>
