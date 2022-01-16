@@ -30,7 +30,6 @@ function travelAgency(event) {
     customername.push(customeropinion);
     let check = JSON.stringify(customername)
      localStorage.setItem("source and destination", check);
-    //    localStorage.setItem("source and destination", JSON.stringify(customername));
        window.location.href = "../../pages/list.html";  
 }
 PageOnLoad();

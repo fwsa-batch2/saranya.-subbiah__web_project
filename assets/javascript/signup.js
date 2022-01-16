@@ -54,7 +54,7 @@ function validmail(current_email) {
 
     if (user) {
       for (let i of user )  {
-            let userlist = i.email;
+            
             let email = customername.Email_Id;
 
             if (current_email == email) {
@@ -71,9 +71,6 @@ function validmail(current_email) {
 function checking(pass, conpass) {
     if (pass == conpass) {
         return true;
-    }
-    else {
-        return false;
     }
 }
 
