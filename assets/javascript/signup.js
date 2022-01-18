@@ -1,6 +1,6 @@
 let customername = [];
 function PageOnLoad() {
-    let user = JSON.parse(localStorage.getItem("login"));
+    let user = JSON.parse(localStorage.getItem("User_loge"));
     if (user != null) {
         customername = user;
     }
@@ -14,12 +14,6 @@ function submit_function(event) {
     let pass = document.getElementById("enter_pass").value;
     let conpass = document.getElementById("confirm_pass").value;
 
-    let customerdetails = {
-        "username": username,
-        "mail_id": mailid,
-        "enter_pass": pass,
-        "confirm_pass": conpass
-    }
     
     let Alreadyexists = validmail(mailid);
 
@@ -29,50 +23,31 @@ function submit_function(event) {
     else if(Alreadyexists){
       alert("Email Already Exist");  
     }
-
-    let checkpassword = checking(pass, conpass);
-
-    console.log(checkpassword)
-
-    if (checkpassword) {
-        customername.push(customerdetails);
-        let check = JSON.stringify(customername)
-        localStorage.setItem("login", check);
-        window.location.href = "/pages/login.html"
-    }
-    else {
-        alert("please check your password");
-    }
-
-}
-
-
-
-function validmail(current_email) {
-    let user = JSON.parse(localStorage.getItem("login"));
-    let used = false;
-
-    if (user) {
-      for (let i of user )  {
-            
-            let email = customername.Email_Id;
-
-            if (current_email == email) {
-                used = true;
-                break;
-            }
-
+    else{
+        customerdetails = {
+            "username": username,
+            "mail_id": mailid,
+            "enter_pass": pass,
+            "confirm_pass": conpass
         }
-    }
-    return used;
-}
-
-
-function checking(pass, conpass) {
-    if (pass == conpass) {
-        return true;
+        customername.push(customerdetails);
+        localStorage.setItem("User_loged", JSON.stringify(customername));
+        window.location.href = "../../pages/login.html"; 
     }
 }
+function validmail(currentEmail){
+    let used = false;
+    let len= customername.length;
+    for (let a = 0; a < len; a++) {
+    const email = customername[a].email;
+    if (currentEmail == email) {
+    used = true;
+    break;
+    }
+    }
+    return used; 
+}
+
 
 
 

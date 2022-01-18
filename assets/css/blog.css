@@ -2,6 +2,30 @@
     body{
          background-color:#4B8CA6;
     }
+    #pages {
+      background-color:hsl(203, 52%, 5%);
+      height: 50px;
+      padding-top: 1%;
+      text-align: center;
+      }
+      
+      a {
+      margin-left: 10%;
+      text-decoration: none;
+      color: white;
+      }
+      
+      #wel {
+      width: 20%;
+      margin: auto;
+      margin-top: 30%;
+      color: white;
+      }
+      
+      a:hover {
+      background-color:#91C4D9;
+      border-radius: 10%;
+      }
    #blog{
       font-size:50px;
       color:#021826; 
