@@ -26,6 +26,9 @@ for (let i of busDetails) {
     <p class="busdetails" style="color: #021826"> End :<span class="endspan" style="color: whitesmoke">${timeofend}</span></p>
     <p class="busdetails" style="color: #021826"> Date :<span class="datespan" style="color: whitesmoke">${dateoftravel}</span></p>
     <p class="busdetails" style="color: #021826"> No. Of Seats :<span class="seatspan" style="color: whitesmoke">${numberofseats}</span></p>
+    <a href="../pages/booking.html">
+        <input type="submit" id="BK" value="Book Tickets">
+        </a>
     <hr>
 </div>`
 
