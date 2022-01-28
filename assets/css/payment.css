@@ -1,0 +1,63 @@
+body {
+    background-color: #021826;
+}
+
+.container {
+    padding: 100px;
+    background-color:#4B8CA6 ;
+    width: 30%;
+    height: 350px;
+    border-radius: 10%;
+    text-align: center;
+    margin-left: 520px;
+    margin-top: 200px;
+    box-shadow: 20px 10px 30px whitesmoke;
+}
+#gpay img {
+    width: 800px;
+    height: 5%;
+    margin-right: px;
+    
+}
+#paytm {
+    width: 10%;
+    height: 10%;
+    margin-bottom: 10px;
+    background: yellow;
+}
+#phonepe {
+    width:10%;
+    height: 10%;
+}
+#cardno {
+    border-radius: 100px;
+    height:30px;
+    width: 300px;
+    margin-top: 20px;
+}
+#country {
+    border-radius:100px;
+    height: 30px;
+    width:80px;
+    margin-top: 20px;
+}
+#validtill {
+    border-radius: 100px;
+    height:30px;
+    width:100px;
+    margin-top: 20px;
+}
+#cvv {
+    border-radius: 100px;
+    height:30px;
+    width:80px;
+    margin-top: 20px;
+}
+.pay{
+    border-radius: 100px;
+    background-color: #021826;
+    color: aliceblue;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+}

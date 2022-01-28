@@ -9,7 +9,7 @@
 </head>
 <body>
    <div class="container">
-       <h1>Payment Method</h1>
+       <h1 style="font-family: 'Courier New', Courier, monospace;">Payment Method</h1>
        <form action="">
            <label for="country">Country
                <select name="country" id="country">
@@ -19,17 +19,27 @@
                    <option value="Canada">Canada</option>
                </select>
            </label>
+           <br>
            <label for="cardno">Card Number
                <input type="text" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace()" required>
            </label>
+           <br>
            <div class="float">
                <label for="validtill">validtill
                    <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()" required>
                </label>
+               <br>
                <label for="cvv">CVV
                 <input type="text" name="cvv" id="cvv" maxlength="3" required>
                </label>
+               <br>
                <button onclick="pay" type="button" class="pay">Pay</button>
+
+               <div class="mob_banking">
+                   <img src="../assets/images/gpay.png" alt="gpay" id="gpay">
+                   <img src="../assets/images/paytm.png" alt="paytm" id="paytm">
+                   <img src="../assets/images/phonepe.png" alt="phonepe" id="phonepe">
+               </div>
            </div>
        </form>
    </div> 

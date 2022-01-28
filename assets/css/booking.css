@@ -12,6 +12,10 @@ body {
     font-family: sans-serif;
     font-size: xx-large;
 }
+#logo img {
+    width:300px;
+    height: 200px;
+}
 .seat {
     background-color:#021826 ;
     height: 20px;
@@ -25,6 +29,7 @@ body {
 }
 .bus-container {
     margin: 20px 0;
+    border-radius: 100px;
 }
 .bus-container select {
     background-color:#91C4D9;

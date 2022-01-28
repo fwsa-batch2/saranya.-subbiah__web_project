@@ -2,13 +2,6 @@
     body{
           background-color: #4B8CA6;
         }
-       #res {
-       color: #021826
-       
-        #245C73
-        #4B8CA6
-        
-       }
     #abt{
       font-size:20px;
        color:#021826; 
@@ -43,4 +36,5 @@
     
     a:hover {
     background-color:#91C4D9;
+    border-radius: 100px;
     }

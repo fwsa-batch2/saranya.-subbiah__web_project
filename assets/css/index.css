@@ -29,6 +29,8 @@ body {
     
     a:hover {
     background-color:#91C4D9;
+    border-radius: 100px;
+    border: black;
     }
  #bus img {
         width:100%;
