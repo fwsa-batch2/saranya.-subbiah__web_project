@@ -13,22 +13,6 @@ body {
     margin-top: 200px;
     box-shadow: 20px 10px 30px whitesmoke;
 }
-#gpay img {
-    width: 800px;
-    height: 5%;
-    margin-right: px;
-    
-}
-#paytm {
-    width: 10%;
-    height: 10%;
-    margin-bottom: 10px;
-    background: yellow;
-}
-#phonepe {
-    width:10%;
-    height: 10%;
-}
 #cardno {
     border-radius: 100px;
     height:30px;

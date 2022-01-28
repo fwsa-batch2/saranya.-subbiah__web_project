@@ -24,7 +24,6 @@ function submithandler(event) {
     return null;
   }
   else {
-    alert("WELCOME")
     window.location.href="./../../pages/home.html"
     localStorage.setItem("username", login);
   }
